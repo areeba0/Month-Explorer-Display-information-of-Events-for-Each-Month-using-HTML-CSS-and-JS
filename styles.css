@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('https://i.pinimg.com/564x/53/2c/65/532c65156ce881f1c6483a0b1d8de7e8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.tile {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: calc(50% - 20px); /* Two tiles per row */
+    max-width: 300px; /* Limit maximum width of the tile */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.tile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h2, p {
+    color: #ff6f61; /* light pink */
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #ff6f61; /* light pink */
+    font-size: 15px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    cursor: pointer;
+    padding: 20px 10px;
+    background-color: #ffcc5c; /* orange */
+    border-radius: 20px;
+    border: 2px dashed white;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #a3d2ca; /* green */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6f61; /* light pink */
+    border: 7px solid #ffcc5c;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffcc5c; /* orange */
+}
+
+#monthSelector {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="checkbox"] {
+    display: none;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"] + label {
+    cursor: pointer;
+    padding: 10px 10px;
+    background-color: #ffcc5c;
+    border-radius: 20px;
+    border: 2px dashed white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin: 5px;
+    color: white;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: #a3d2ca;
+}
+
+@media only screen and (max-width: 600px) {
+    .tile {
+        width: calc(100% - 20px); /* One tile per row on small screens */
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body, .container {
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+.tile {
+    animation-delay: 0.2s; /* Delay the animation for tiles */
+}
+
+/* Adjustments for button hover animation */
+button:hover {
+    transition: background-color 0.4s ease-in-out;
+}

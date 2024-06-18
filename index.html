@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month Data Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Choose an option:</h2>
+        <div id="first">
+            <br>
+            <input type="radio" id="single" name="viewOption" value="single">
+            <label for="single">View 1 month</label>
+            <input type="radio" id="multiple" name="viewOption" value="multiple">
+            <label for="multiple">View multiple months</label>
+        </div>
+    </div>
+    <div class="container" id="monthSelector" style="display: none;">
+        <p>select an option</p>
+        <br>
+        <input type="checkbox" id="January" name="month" value="January">
+        <label for="January">January</label>
+        <input type="checkbox" id="February" name="month" value="February">
+        <label for="February">February</label>
+        <input type="checkbox" id="March" name="month" value="March">
+        <label for="March">March</label>
+        <input type="checkbox" id="April" name="month" value="April">
+        <label for="April">April</label>
+        <input type="checkbox" id="May" name="month" value="May">
+        <label for="May">May</label>
+        <input type="checkbox" id="June" name="month" value="June">
+        <label for="June">June</label>
+        <input type="checkbox" id="July" name="month" value="July">
+        <label for="July">July</label>
+        <input type="checkbox" id="August" name="month" value="August">
+        <label for="August">August</label>
+        <input type="checkbox" id="September" name="month" value="September">
+        <label for="September">September</label>
+        <input type="checkbox" id="October" name="month" value="October">
+        <label for="October">October</label>
+        <input type="checkbox" id="November" name="month" value="November">
+        <label for="November">November</label>
+        <input type="checkbox" id="December" name="month" value="December">
+        <label for="December">December</label>
+        <br><br>
+        <button onclick="viewSelectedMonths()">View</button>
+    </div>
+    <div class="container" id="output"></div>
+    <script src="script.js"></script>
+</body>
+</html>
