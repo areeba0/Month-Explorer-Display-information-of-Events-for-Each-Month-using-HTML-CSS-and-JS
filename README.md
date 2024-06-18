@@ -25,3 +25,20 @@ The Month Data Viewer is a web-based application that provides users with a visu
 ## 5. Animations
 - Slide-in Animation: Smooth entry for the body and container elements.
 - Button Hover Animation: Subtle color transition effect on button hover.
+
+# Implementations
+## HTML Structure
+- Containers: Main content containers for holding month selection options and output.
+- Input Elements: Radio buttons for view selection, checkboxes for month selection.
+- Buttons: A button to trigger the viewing of the selected month's data.
+  
+## CSS Styling
+- Background: A visually engaging background image covering the entire webpage.
+- Flexbox Layout: For aligning tiles and handling responsiveness.
+- Animations: Keyframes for slide-in effects and smooth transitions.
+- Color Scheme: Light pink, orange, and green colors for interactive elements and text.
+  
+## JavaScript Functionality
+- Data Object: Holds the information for each month.
+- Event Listeners: For handling user interactions with radio buttons and checkboxes.
+- Dynamic Content Generation: Functions to create and insert tiles into the DOM based on user selections.
